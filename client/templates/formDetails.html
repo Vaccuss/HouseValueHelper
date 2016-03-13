@@ -1,0 +1,139 @@
+<template name="formDetails">
+    <div id="accord" class="ui styled fluid accordion">
+        <div class="title active">
+            <i class="dropdown icon"></i>
+            Address Information
+        </div>
+        <div class="content active left">
+            <div class="form_align">
+                <form class="ui form">
+                    <div class="field">
+                        <label class="divided header">Address?</label>
+                        <input id="address" type="text" placeholder="What is the address of the property">
+                    </div>
+
+                    <div class="three fields">
+                        <div class="field">
+                            <label class="divided header">What type of property?</label>
+                            <select id="#property_type" class="ui dropdown">
+                                <option id="#props_type1" data-id="1">House</option>
+                                <option id="#props_type2">Apartment</option>
+                                <option id="#props_type3">Town House</option>
+                                <option id="#props_type4">Land</option>
+                                <option id="#props_type5">Land</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="divided header">How is the condition?</label>
+                            <select id="#condition" class="ui dropdown">
+                                <option>Poor condition</option>
+                                <option>Fair condition</option>
+                                <option>Good condition</option>
+                                <option>Perfect condition</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label class="divided header">How large is the house?</label>
+                            <select id="#size_of_house" class="ui dropdown">
+                                <option>Less than 300m2</option>
+                                <option>Between 301 - 600m2</option>
+                                <option>Between 601 - 1000m2</option>
+                                <option>Larger than 1000m2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="three fields">
+                        <div class="field">
+                            <label class="divided header">How many Bedrooms?</label>
+                            <select id="#bedrooms" class="ui dropdown">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="divided header">How many Bathrooms?</label>
+                            <select id="#bathrooms" class="ui dropdown">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="divided header">How many Car ports?</label>
+                            <select id="#car_ports" class="ui dropdown">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="divided header">Does your property have any other
+                            features?</label>
+                        <input id="other_features" type="text">
+                    </div>
+                    <div class="ui grid">
+                        <div class="fourteen wide column"></div>
+                        <div class="two wide column">
+                            <div id="next" class="ui blue button right">Next</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Contact Information
+        </div>
+
+        <div class="content left">
+            <div class="form_align">
+                <form class="ui form">
+
+                    <div class="two fields">
+                        <div class="field">
+                            <label class="divided header">First Name</label>
+                            <input id="first_name" type="text" placeholder="First Name">
+                        </div>
+
+                        <div class="field">
+                            <label class="divided header">Last Name</label>
+                            <input id="last_name" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="two fields">
+                        <div class="field">
+                            <label class="divided header">Email</label>
+                            <input id="email" type="email" placeholder="Last Name">
+                        </div>
+
+                        <div class="field">
+                            <label class="divided header">Phone Number</label>
+                            <input id="phone_number" type="tel" placeholder="Last Name">
+                        </div>
+
+                    </div>
+                    <div class="ui padded grid">
+                        <div class="row">
+                            <div class="twelve wide column"></div>
+
+                            <div class="four wide column">
+                                <div id="back" class="ui blue button right">Back</div>
+                                <div id="submit" class="ui green button right">Submit</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</template>

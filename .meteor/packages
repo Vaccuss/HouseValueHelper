@@ -22,3 +22,9 @@ iron:router
 semantic:ui
 semantic:ui-css
 flemay:less-autoprefixer
+email
+http
+meteorhacks:npm
+
+
+npm-container
