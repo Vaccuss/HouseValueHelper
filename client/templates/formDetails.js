@@ -41,7 +41,7 @@ Template.formDetails.events({
             "phone_number"   : phone_number
         };
         Meteor.call('New_client_log', data);
-        Meteor.call('send_mail', data);
+        //Meteor.call('send_mail', data);
         Router.go('thank-you');
         //console.log(data)
 
