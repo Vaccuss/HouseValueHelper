@@ -2,6 +2,11 @@
   "private": {
     "slack": {
       "hookUrl": "https://hooks.slack.com/services/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"
+    },
+    "analyticsSettings": {
+      "Google Analytics": {
+        "trackingId": "UA-66340133-3"
+      }
     }
   }
 }
