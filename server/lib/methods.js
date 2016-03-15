@@ -18,7 +18,8 @@ Meteor.methods({
                         {title: data.first_name + ' ' + data.last_name, value: data.address},
                         {title: "Contact Details", value: data.email + " " + data.phone_number},
                         {title: "House Details", value: "Bed: " + data.bedrooms + " Bath: " + data.bathrooms + " Car: " + data.car_ports},
-                        {title: "Conditon", value: data.condition},
+                        {title: "Property Type", value: data.property_type},
+                        {title: "Condition", value: data.condition},
                         {title: "Other Features", value: data.other_features}
                     ]
                 }
