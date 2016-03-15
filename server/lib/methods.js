@@ -3,7 +3,7 @@
  */
 
 SlackAPI = Meteor.npmRequire('node-slack');
-var Slacker = new SlackAPI(Meteor.settings.private.slack.hookUrl);
+var Slacker = new SlackAPI("https://hooks.slack.com/services/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");
 
 Meteor.methods({
     "New_client_log": function (data) {
@@ -25,22 +25,4 @@ Meteor.methods({
             ]
         });
     }
-
-    //"send_mail": function (data) {
-    //    Email.send({
-    //        from: "EmailBot@townsville-property.heroku.com",
-    //        to: "deansteven308@gmail.com",
-    //        subject: "Client Appraisal - " + data.first_name + " " + data.last_name,
-    //        html: "<h1>" + data.first_name + " " + data.last_name + "</h1>" +
-    //        "<h2>" + data.email +"</h2>" +
-    //        "<h2>" + data.phone_number +"</h2>" +
-    //        "<p> Address: " + data.address + "</p>" +
-    //        "<p> Condition: " + data.condition + "</p>" +
-    //        "<p> Bathrooms: " + data.bathrooms + "</p>" +
-    //        "<p> Bedrooms: " + data.bedrooms + "</p>" +
-    //        "<p> Car Ports: " + data.car_ports + "</p>" +
-    //        "<p> Property type: " + data.property_type + "</p>" +
-    //        "<p> Other Features: " + data.other_features + "</p>"
-    //    })
-    //}
 });
